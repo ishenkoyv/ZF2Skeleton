@@ -1,0 +1,7 @@
+/vendor/
+data/cache/
+build/liquibase.properties
+bin/db_erase.sh
+config/autoload/local.php
+config/development/global.php
+public/vendor/

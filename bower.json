@@ -1,0 +1,7 @@
+{
+  "name": "zf2skeleton",
+  "dependencies": {
+    "bootstrap": "*",
+    "fontawesome": "*"
+  }
+}

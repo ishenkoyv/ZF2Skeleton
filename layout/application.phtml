@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <?= $this->headTitle('ZF2 Skeleton Application')->setSeparator(' - ')->setAutoEscape(false) ?>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="contractor prequalification, contractor ohs, contractor management, supplier auditing, supply chain management, vendor prequalification" />
+
+    <link rel="stylesheet" href="/vendor/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/application.css">
+    <script src="/vendor/jquery/dist/jquery.min.js"></script>
+
+    <?= $this->headScript() ?>
+    <?= $this->headLink() ?>
+    <?= $this->headStyle() ?>
+
+  </head>
+  <body>
+
+      <!-- Fixed navbar -->
+      <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+
+          <div class="navbar-header col-xs-5">
+            <a class="navbar-brand informational" href="/">
+              <img src="/img/logo.png" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+
+    <!-- Begin page content -->
+
+    <div id="content" class="container">
+        <div class="col-md-12 big-margin-top">
+        
+        <?php
+            $flash = $this->flashMessenger();
+            $flash->setMessageOpenFormat('<div%s>
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">
+                    &times;
+                </button>
+                <ul><li>')
+                ->setMessageSeparatorString('</li><li>')
+                ->setMessageCloseString('</li></ul></div>');
+
+                echo $flash->render('error',   array('alert', 'alert-dismissable', 'alert-danger'));
+                echo $flash->render('success', array('alert', 'alert-dismissable', 'alert-success'));
+        ?>
+
+        <?= $this->layout()->content ?>
+
+        </div>
+    </div>
+
+    <footer class="footer">
+    <div>
+      <div class="container">
+        <div class="col-md-12">
+          <span class="pull-left">Copyright <?= date('Y') ?> Your Company Pty.</span> 
+        </div>
+      </div>
+    </div>
+    </footer>
+
+    <script type="text/javascript" src="/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  </body>
+</html>

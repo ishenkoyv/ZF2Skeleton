@@ -1,0 +1,11 @@
+#!/bin/sh
+PG_USER=postgres
+PG_PASS=
+
+PGPASSWORD=$PG_PASS
+
+psql -U $PG_USER -d postgres -c "SELECT pg_terminate_backend (pg_stat_activity.pid) FROM pg_stat_activity WHERE pg_stat_activity.datname = 'zf2skeleton';"
+psql -U $PG_USER -d postgres -c 'drop database zf2skeleton;'
+psql -U $PG_USER -d postgres -c 'CREATE DATABASE zf2skeleton;'
+psql -U $PG_USER -d postgres -c 'GRANT ALL privileges ON DATABASE zf2skeleton TO zf2skeleton;'
+psql -U $PG_USER -d postgres -c 'GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO zf2skeleton;'

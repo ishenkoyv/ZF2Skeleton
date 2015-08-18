@@ -1,0 +1,18 @@
+{
+  "minimum-stability" : "dev",
+  "prefer-stable" : true,
+  "require": {
+    "php": ">=5.5.1",
+    "zendframework/zendframework": "*",
+    "zendframework/zend-developer-tools": "dev-master",
+    "bjyoungblood/bjy-profiler": "*",
+    "doctrine/common": "*",
+    "bjyoungblood/bjy-profiler": "*",
+    "symfony/stopwatch": "*",
+    "pomm-project/cli": "2.0.*@dev",                                                                       
+    "pomm-project/model-manager": "2.0.*@dev",                              
+    "pomm-project/foundation": "2.0.*@dev",
+    "ishenkoyv/iyv-zf2generic": "dev-master",
+    "ishenkoyv/iyv-zf2pomm-profiler": "dev-master"
+  }
+}

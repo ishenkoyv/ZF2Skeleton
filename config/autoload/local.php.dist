@@ -1,0 +1,11 @@
+<?php
+return [
+    'db' => [
+      'driver'    => 'pgsql',
+      'host' => 'localhost',
+      'port' => '5432',
+      'dbname' => 'zf2skeleton',
+      'username'  => 'zf2skeleton',
+      'password'  => 'zf2skeleton',
+    ],
+];

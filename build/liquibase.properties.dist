@@ -1,0 +1,6 @@
+classpath = ./bin/postgresql-9.4-1201.jdbc4.jar
+driver = org.postgresql.Driver
+url = jdbc:postgresql://localhost:5432/zf2skeleton
+username = zf2skeleton
+password = zf2skeleton
+changeLogFile = ./migration/changelog.xml

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+CAUTION: Do not modify this file unless you know what you are doing.
+         Unexpected results may occur if the code is changed deliberately.
+-->
+<dbmodel pgmodeler-ver="0.8.1-beta1" last-position="0,0" last-zoom="1"
+	 default-schema="public" default-owner="postgres">
+<role name="zf2skeleton">
+</role>
+
+<database name="zf2skeleton">
+	<role name="zf2skeleton"/>
+</database>
+
+<schema name="public" protected="true" fill-color="#e1e1e1" sql-disabled="true">
+</schema>
+
+<sequence name="page_id_seq"
+	 start="1" increment="1"
+	 min-value="0" max-value="2147483647"
+	 cache="1" cycle="false">
+	<schema name="public"/>
+	<role name="zf2skeleton"/>
+</sequence>
+
+<table name="page">
+	<schema name="public"/>
+	<role name="zf2skeleton"/>
+	<position x="467" y="209"/>
+	<column name="page_id" not-null="true" sequence="public.page_id_seq">
+		<type name="smallint"/>
+	</column>
+	<column name="name" not-null="true">
+		<type name="varchar" length="255"/>
+	</column>
+	<column name="content" not-null="true">
+		<type name="text"/>
+	</column>
+	<constraint name="page_pk" type="pk-constr" table="public.page">
+		<columns names="page_id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+</dbmodel>

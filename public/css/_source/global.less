@@ -1,0 +1,33 @@
+@import "./variables.less";
+
+.big-margin-top {
+  margin-top: @big-margin-value;
+}
+.big-margin-bottom {
+  margin-bottom: @big-margin-value;
+}
+.middle-margin-top {
+  margin-top: @middle-margin-value;
+}
+.middle-margin-bottom {
+  margin-bottom: @middle-margin-value;
+}
+.small-margin-top {
+  margin-top: @small-margin-value;
+}
+.small-margin-bottom {
+  margin-bottom: @small-margin-value;
+}
+
+.form-group.required {                                                                                         
+  .control-label:after {                                                                                       
+      content:"*";                                                                                             
+      color:red;                                                                                               
+  }                                                                                                            
+} 
+
+.vcenter {                                                                      
+  display: inline-block;                                                        
+  vertical-align: middle;                                                       
+  float: none;                                                                  
+}  
